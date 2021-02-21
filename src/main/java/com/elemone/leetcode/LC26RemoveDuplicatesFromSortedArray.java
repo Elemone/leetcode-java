@@ -6,8 +6,8 @@ public class LC26RemoveDuplicatesFromSortedArray {
             return 0;
         }
         int i = 0;
-        for (int j = 0; j < nums.length; j++) {
-            if (i == j || nums[i] == nums[j]) {
+        for (int j = 1; j < nums.length; j++) {
+            if (nums[i] == nums[j]) {
                 continue;
             }
             i++;
